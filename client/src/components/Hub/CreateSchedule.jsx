@@ -44,7 +44,7 @@ const CreateSchedule = () => {
   const handleClear = async (event) => {
     event.preventDefault();
     try {
-      await axios.delete(`${window.API_URL}/schedules/clear`);
+      await axios.delete(`${window.API_URL}/api/schedules/clear`);
       alert("Schedule cleared!");
     } catch (error) {
       alert(`Error clearing schedule: ${error.message}`);
