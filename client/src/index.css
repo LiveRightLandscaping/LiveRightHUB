@@ -1,0 +1,285 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.numpad-container {
+  background-color: #212121;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(170, 168, 168, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .numpad-container {
+    padding: 3rem;
+  }
+}
+
+.numpad-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.numpad-input {
+  width: 100%;
+  background-color: #393e46;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  font-size: 1.25rem;
+  border: 2px solid #147003;
+}
+
+.numpad-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.numpad-button {
+  background-color: #4e535b;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+  transition: background-color 200ms, transform 200ms;
+  border: 2px solid transparent;
+}
+
+.numpad-button:hover {
+  background-color: #60656b;
+  border-color: #147003;
+}
+
+.numpad-special {
+  background-color: #147003;
+}
+
+.numpad-special:hover {
+  background-color: #22b008;
+}
+
+.employee-card {
+  background-color: #2d2d2d;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 200ms, transform 200ms;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.employee-card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+}
+
+.employee-name {
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+.employee-clockin-time {
+  flex-grow: 1;
+  flex-basis: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.clockout-btn {
+  flex-shrink: 0;
+}
+
+.app-container {
+  background-color: #212121;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.app-title {
+  font-weight: 600;
+}
+
+.app-content {
+  width: 100%;
+  max-width: 1200px;
+}
+
+
+  .delete-employee-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .delete-employee-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .delete-employee-input {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #3d3d3d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .delete-employee-button {
+    background-color: #11af00;
+    color: #fff;
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 200ms, transform 200ms;
+  }
+
+  .delete-employee-button:hover {
+    background-color: #17c400;
+    transform: translateY(-2px);
+    cursor: pointer;
+  }
+
+
+  .employee-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .input-field {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+  }
+
+  .button-primary {
+    background-color: #11af00;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 200ms, transform 200ms;
+  }
+
+  .button-primary:hover {
+    background-color: #17c400;
+    transform: translateY(-2px);
+    cursor: pointer;
+  }
+
+   body {
+    background: linear-gradient(to bottom right, #333333, #555555);
+  }
+
+  
+
+  /* Burger Menu */
+.burger-menu-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 28px;
+  transition: transform 0.3s ease;
+}
+
+.burger-line {
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.clicked .burger-line {
+  background-color: #00FF00; /* Change this color to your desired color */
+}
+
+.clicked .burger-line:nth-child(2) {
+  animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #00FF00;
+  }
+  25% {
+    background-color: #FF00FF;
+  }
+  50% {
+    background-color: #FF0000;
+  }
+  75% {
+    background-color: #0000FF;
+  }
+  100% {
+    background-color: #00FF00;
+  }
+}
+
+
+/* Side Menu */
+.side-menu {
+  transition: transform 0.3s ease;
+}
+
+.side-menu button {
+  text-align: left;
+}
+
+/* Close button */
+.side-menu button.close-btn {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* Side menu button */
+.side-menu-btn {
+  transition: background-color 0.3s ease;
+}
+
+.side-menu-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.tax-included {
+  font-size: 0.8em;
+  margin-left: 0.5rem;
+}
