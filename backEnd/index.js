@@ -7,7 +7,11 @@ const cors = require("cors"); // Import the cors package
 dotenv.config();
 const app = express();
 
-app.use(cors()); // Add cors middleware to your app
+app.use(
+  cors({
+    origin: "liverighthub.netlify.app",
+  })
+); // Add cors middleware to your app
 app.use(express.json());
 
 const transporter = nodemailer.createTransport({
