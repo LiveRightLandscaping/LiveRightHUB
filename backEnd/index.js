@@ -9,7 +9,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "liverighthub.netlify.app",
+    origin: "https://liverighthub.netlify.app",
   })
 ); // Add cors middleware to your app
 app.use(express.json());
