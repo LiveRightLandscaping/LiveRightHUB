@@ -88,7 +88,7 @@ const Header = () => {
                   onClick={handleCalendar}
                   className="w-full p-4 border-b border-gray-700 mb-4 mt-4 rounded-xl side-menu-btn"
                 >
-                  Calendar
+                  Schedule
                 </button>
                 <button
                   onClick={handleQuote}
